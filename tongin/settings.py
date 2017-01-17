@@ -49,7 +49,7 @@ if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
             'HOST': '/cloudsql/tongin-1302:tongindb',
             'NAME': 'tongin',
             'USER': 'root',
-            'PASSWORD': '7321',
+            'PASSWORD': '',
         }
     }
 elif os.getenv('SETTINGS_MODE') == 'prod':
@@ -61,7 +61,7 @@ elif os.getenv('SETTINGS_MODE') == 'prod':
             'INSTANCE': '2001:4860:4864:1:21cc:f030:dede:9df5',
             'NAME': 'tongin',
             'USER': 'root',
-            'PASSWORD': '7321',
+            'PASSWORD': '',
         }
     }
 else:
@@ -70,7 +70,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'tongin',
             'USER': 'admin',
-            'PASSWORD': '7321',
+            'PASSWORD': '',
             'HOST': 'localhost',
             'PORT': '3306',
         }
